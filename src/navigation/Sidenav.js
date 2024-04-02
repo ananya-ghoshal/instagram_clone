@@ -1,9 +1,0 @@
-import React from 'react'
-import "./Sidenav.css";
-
-function Sidenav(){
-    return(
-        <div className="sidenav"></div>
-    )
-}
-export default Sidenav;

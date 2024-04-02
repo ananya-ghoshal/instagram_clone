@@ -7,7 +7,7 @@ function Signup() {
     const[password,setPassword]=useState("");
   return (
     <div className="signup">
-      <img src="instagram_texticon.png" alt="" />
+      <img src="images/instagram_logo.png" alt="" />
       <input onChange = {e => setEmail(e.target.value)} type="email" placeholder="Email" value={email}/>
       <input onChange = {e => setUsername(e.target.value)} type="text" placeholder="Username" value={username}/>
       <input onChange = {e => setPassword(e.target.value)} type="password" placeholder="Password" value={password}/>
