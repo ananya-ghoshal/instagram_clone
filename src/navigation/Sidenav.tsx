@@ -1,11 +1,13 @@
 import "./Sidenav.css";
 import HomeIcon from "../icons/HomeIcon";
-// import HomeIcon from '@mui/icons-material/Home';
-// import SearchIcon from "@mui/icons-material/Search";
-// import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';import SlideshowIcon from "@mui/icons-material/Slideshow";
-// import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-// import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-// import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "../icons/SearchIcon";
+import ExploreIcon from "../icons/ExploreIcon";
+import ChatIcon from "../icons/ChatIcon";
+import CreateIcon from "../icons/CreateIcon";
+import MenuIcon from "../icons/MenuIcon";
+import NotificationIcon from "../icons/Notifications";
+import ReelIcon from "../icons/ReelIcon";
+import ProfileIcon from "../icons/ProfileIcon";
 
 function Sidenav() {
   return (
@@ -17,48 +19,46 @@ function Sidenav() {
           <span>Home</span>
         </button>
 
-        {/* <button className="sidenav__button">
-          <SearchIcon/>
+        <button className="sidenav__button">
+          <SearchIcon />
           <span>Search</span>
         </button>
 
         <button className="sidenav__button">
-          <ExploreOutlinedIcon/>
+          <ExploreIcon />
           <span>Explore</span>
         </button>
 
         <button className="sidenav__button">
-          <SlideshowIcon/>
+          <ReelIcon />
           <span>Reels</span>
         </button>
 
         <button className="sidenav__button">
-          <ChatOutlinedIcon/>
+          <ChatIcon />
           <span>Messages</span>
         </button>
 
         <button className="sidenav__button">
-          <FavoriteBorderIcon/>
+          <NotificationIcon />
           <span>Notifications</span>
         </button>
 
         <button className="sidenav__button">
-          <AddCircleOutlineIcon/>
+          <CreateIcon />
           <span>Create</span>
         </button>
 
         <button className="sidenav__button">
-          <AddCircleOutlineIcon/>
+          <ProfileIcon />
           <span>Profile</span>
         </button>
-
       </div>
       <div className="sidenav__more">
-      <button className="sidenav__button">
-          <MenuIcon/>
+        <button className="sidenav__button">
+          <MenuIcon />
           <span>More</span>
         </button>
-      </div> */}
       </div>
     </div>
   );
