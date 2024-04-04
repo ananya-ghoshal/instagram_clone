@@ -1,6 +1,5 @@
-import React from "react";
 import "./Sidenav.css";
-import HomeIcon from "../icons/homeicon";
+import HomeIcon from "../icons/HomeIcon";
 // import HomeIcon from '@mui/icons-material/Home';
 // import SearchIcon from "@mui/icons-material/Search";
 // import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';import SlideshowIcon from "@mui/icons-material/Slideshow";
