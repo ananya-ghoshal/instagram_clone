@@ -6,7 +6,10 @@ function Signup() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <div className="signup">
+    <form
+      onSubmit={() => formSubmit(email, username, password)}
+      className="signup"
+    >
       <img src="images/instagram_logo.png" alt="" />
       <input
         onChange={e => setEmail(e.target.value)}
@@ -27,9 +30,8 @@ function Signup() {
         value={password}
       />
       <button>Signup</button>
-    </div>
+    </form>
   );
 }
-
+function formSubmit(email: string, username: string, password: string) {}
 export default Signup;
-
