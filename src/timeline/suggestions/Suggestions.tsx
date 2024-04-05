@@ -1,7 +1,6 @@
 import "./Suggestions.css";
 function Suggestions() {
-  return <div>Suggestions</div>;
+  return <div className="suggestions"></div>;
 }
 
 export default Suggestions;
-

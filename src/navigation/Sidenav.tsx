@@ -7,7 +7,7 @@ import CreateIcon from "../icons/CreateIcon";
 import MenuIcon from "../icons/MenuIcon";
 import NotificationIcon from "../icons/Notifications";
 import ReelIcon from "../icons/ReelIcon";
-import ProfileIcon from "../icons/ProfileIcon";
+import ProfileImage from "../components/ProfileImage";
 
 function Sidenav() {
   return (
@@ -50,7 +50,7 @@ function Sidenav() {
         </button>
 
         <button className="sidenav__button">
-          <ProfileIcon />
+          <ProfileImage />
           <span>Profile</span>
         </button>
       </div>

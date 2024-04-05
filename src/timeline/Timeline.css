@@ -1,0 +1,4 @@
+.timeline {
+    grid-column: 2 / 3;
+    overflow: hidden;
+}
