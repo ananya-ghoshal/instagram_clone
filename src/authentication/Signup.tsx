@@ -7,7 +7,10 @@ function Signup() {
   const [password, setPassword] = useState("");
   return (
     <form
-      onSubmit={() => formSubmit(email, username, password)}
+      onSubmit={e => {
+        e.preventDefault();
+        formSubmit(email, username, password);
+      }}
       className="signup"
     >
       <img src="images/instagram_logo.png" alt="" />
@@ -29,9 +32,25 @@ function Signup() {
         placeholder="Password"
         value={password}
       />
-      <button>Signup</button>
+      <input type="submit" value="Signup" role="button" />
     </form>
   );
 }
-function formSubmit(email: string, username: string, password: string) {}
+async function formSubmit(email: string, username: string, password: string) {
+  const response = await fetch("http://localhost:3030/auth/signup", {
+    method: "POST",
+    mode: "cors",
+    credentials: "include",
+    body: JSON.stringify({
+      email,
+      username,
+      password,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const data: { code: number } = await response.json();
+  console.log(data);
+}
 export default Signup;

@@ -1,35 +1,35 @@
-.signup{
+.signup {
     display: flex;
     flex-direction: column;
     border: 1px solid grey;
     padding: 50px;
     margin-left: 30px;
-    margin-right:30px;
+    margin-right: 30px;
 }
-.signup>img{
+.signup > img {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
 }
-.signup > input{
+.signup > input {
     background-color: #fffefe;
     border: 1px solid grey;
     border-radius: 3px;
     padding: 12px;
     margin-bottom: 20px;
 }
-.signup > input:focus{
-    outline:1px solid grey;
+.signup > input:focus {
+    outline: 1px solid grey;
 }
-.signup > button{
+.signup > input[type="submit"] {
     padding: 12px;
-    border-radius:8px;
+    border-radius: 8px;
     border: 0;
     background-color: #0095f6;
     color: white;
     font-weight: bolder;
 }
-.signup>button:hover{
-    cursor:pointer;
+.signup > input[type="submit"]:hover {
+    cursor: pointer;
 }

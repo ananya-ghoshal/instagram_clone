@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Authentication.css";
 import Login from "./Login";
 import Signup from "./Signup";
+import HomepageImage from "./instagram_left.png";
 
 function Authentication() {
   const [active, setActive] = useState("login");
@@ -12,7 +13,7 @@ function Authentication() {
   return (
     <div className="authentication">
       <div className="auth__left">
-        <img src="https://i.imgur.com/P3Vm1Kq.png" alt="" />
+        <img src={HomepageImage} alt="" />
       </div>
 
       <div className="auth__right">
@@ -37,4 +38,3 @@ function Authentication() {
 }
 
 export default Authentication;
-
