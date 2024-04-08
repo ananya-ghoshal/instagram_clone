@@ -5,11 +5,17 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <div className="login">
+    <form
+      onSubmit={e => {
+        e.preventDefault();
+        loginFormSubmit(email, password);
+      }}
+      className="login"
+    >
       <img src="images/instagram_logo.png" alt="" />
       <input
         onChange={e => setEmail(e.target.value)}
-        type="email"
+        type="text"
         placeholder="Email"
         value={email}
       />
@@ -19,10 +25,21 @@ function Login() {
         placeholder="Password"
         value={password}
       />
-      <button>Log in</button>
-    </div>
+      <input type="submit" value="Log In" role="button" />
+    </form>
   );
 }
 
-export default Login;
+async function loginFormSubmit(email: string, password: string) {
+  const resp = await fetch("http://localhost:3030/auth/signin", {
+    method: "POST",
+    body: JSON.stringify({ username_email: email, password }),
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  console.log(resp.status, await resp.json());
+}
 
+export default Login;

@@ -1,16 +1,17 @@
 .stories {
-    display: flex;
-    margin-top: 20px;
-    overflow-x: hidden;
+  display: flex;
+  margin-top: 20px;
+  overflow-x: hidden;
 }
 .stories > span {
-    margin: 5px;
+  margin: 5px;
+  width: 6rem;
 }
 .stories > span > p {
-    margin-top: 1px;
+  margin-top: 1px;
 }
 .stories > span > img {
-    height: 70px;
-    width: 70px;
-    border-radius: 35px;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
 }

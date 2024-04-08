@@ -1,3 +1,22 @@
 .suggestions {
-    grid-column: 3 / 4;
+  grid-column: 3 / 4;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.suggestionItem > a {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgb(0, 136, 255);
 }

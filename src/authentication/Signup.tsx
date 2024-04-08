@@ -50,7 +50,15 @@ async function formSubmit(email: string, username: string, password: string) {
       "Content-Type": "application/json",
     },
   });
-  const data: { code: number } = await response.json();
+  if (response.status != 201) {
+    console.error(await response.json());
+  }
+  const data: {
+    code: number;
+    id: number;
+    name: string | undefined;
+    email: string;
+  } = await response.json();
   console.log(data);
 }
 export default Signup;
