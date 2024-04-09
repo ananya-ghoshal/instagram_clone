@@ -1,5 +1,5 @@
 import "./Stories.css";
-import Storyimage from "../../components/photo.jpg";
+import Storyimage from "../../../../src/components/photo.jpg";
 
 function StoryEntry() {
   return (

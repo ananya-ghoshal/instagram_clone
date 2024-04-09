@@ -1,22 +1,22 @@
 .suggestions {
-  grid-column: 3 / 4;
-  margin-top: 2rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    grid-column: 2 / 3;
 }
 .suggestionItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
 }
 .details {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .suggestionItem > a {
-  text-decoration: none;
-  font-size: 0.8em;
-  font-weight: bolder;
-  color: rgb(0, 136, 255);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: rgb(0, 136, 255);
 }

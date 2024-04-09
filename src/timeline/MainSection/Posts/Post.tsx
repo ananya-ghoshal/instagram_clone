@@ -1,11 +1,11 @@
 import "./Post.css";
 import PostImg from "./post.jpg";
-import ChatIcon from "../../icons/ChatIcon";
-import NotificationIcon from "../../icons/Notifications";
-import SendIcon from "../../icons/SendIcon";
-import SaveIcon from "../../icons/SaveIcon";
-import MoreHorizonIcon from "../../icons/MoreHorizonIcon";
-import ProfileImage from "../../components/ProfileImage";
+import ChatIcon from "../../../icons/ChatIcon";
+import NotificationIcon from "../../../icons/Notifications";
+import SendIcon from "../../../icons/SendIcon";
+import SaveIcon from "../../../icons/SaveIcon";
+import MoreHorizonIcon from "../../../icons/MoreHorizonIcon";
+import ProfileImage from "../../../components/ProfileImage";
 
 function Post() {
   return (
