@@ -1,22 +1,41 @@
 .suggestions {
-    margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 2rem;
-    grid-column: 2 / 3;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
 }
 .suggestionItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
 }
 .details {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .suggestionItem > a {
-    text-decoration: none;
-    font-size: 0.8em;
-    font-weight: bolder;
-    color: rgb(0, 136, 255);
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgb(0, 136, 255);
+}
+.suggestion__item > a:hover {
+  cursor: pointer;
+}
+.suggestion__items {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.suggestion__item {
+  margin-top: 1rem;
+}
+.suggestions > span {
+  font-size: 1rem;
+  color: grey;
+  margin-top: 3rem;
+  font-weight: bolder;
 }

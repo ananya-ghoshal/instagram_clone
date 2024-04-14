@@ -1,7 +1,7 @@
 import ProfileImage from "../../components/ProfileImage";
 import "./Suggestions.css";
 
-function SuggestionItem() {
+function SuggestionItem(props: any) {
   return (
     <div className="suggestionItem">
       <div className="profile_img">
@@ -9,11 +9,11 @@ function SuggestionItem() {
       </div>
 
       <div className="details">
-        <span>username</span>
-        <span>Suggested for you</span>
+        <span>{props.name}</span>
+        <span>{props.details}</span>
       </div>
       <a href="#" className="follow">
-        Follow
+        {props.button}
       </a>
     </div>
   );

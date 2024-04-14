@@ -1,3 +1,4 @@
 .MainSection {
-    grid-column: 1 / 2;
+  grid-column: 1 / 2;
+  scrollbar-width: none;
 }
