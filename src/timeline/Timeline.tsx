@@ -1,5 +1,5 @@
 import MainSection from "./MainSection/MainSection";
-import Suggestions from "./Suggestions/Suggestions";
+import Suggestions from "./suggestions/Suggestions";
 import "./Timeline.css";
 
 function Timeline() {
