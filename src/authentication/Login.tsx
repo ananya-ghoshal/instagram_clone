@@ -23,7 +23,7 @@ function Login() {
           }}
           className="form__login"
         >
-          <p className="logo">Ifstagram</p>
+          <p className="logo">Clone</p>
           <input
             onChange={e => setEmail(e.target.value)}
             type="text"

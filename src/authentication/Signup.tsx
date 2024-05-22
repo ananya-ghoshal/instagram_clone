@@ -24,7 +24,7 @@ function Signup() {
           }}
           className="form__signup"
         >
-          <p className="logo">Ifstagram</p>
+          <p className="logo">Clone</p>
           <input
             onChange={e => setEmail(e.target.value)}
             type="email"
