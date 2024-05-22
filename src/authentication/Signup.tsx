@@ -24,7 +24,7 @@ function Signup() {
           }}
           className="form__signup"
         >
-          <img src="images/instagram_logo.png" alt="" />
+          <p className="logo">Ifstagram</p>
           <input
             onChange={e => setEmail(e.target.value)}
             type="email"

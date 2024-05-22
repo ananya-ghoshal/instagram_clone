@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
 .login,
 .signup {
   display: flex;
@@ -15,6 +16,16 @@
 }
 .auth__right {
   width: 25rem;
+}
+.auth__right > form {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 1.5rem;
 }
 .auth__more {
   border: 1px solid grey;
